@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      height: 100vh;
+      background: #f7f7f7;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #008CBA;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #005f75;
+    }
+    
+
+    h1 {
+      margin-top: 50px;
+      font-size: 3rem;
+      color: #333;
+    }
+
+    .loading-icon {
+      /* Add the following styles to center the element */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 5px solid #ccc;
+      border-top-color: gray;
+      animation: spin 1s ease-in-out infinite;
+      margin-top: 40px;
+    }
+
+    @keyframes spin {
+      to {transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <button onclick="window.history.back()">Back to News Feed</button>
+
+  <h1>Coming Soon</h1>
+  <p><h2>we are currently working on it! Stay Tuned</h2></p>
+  <div class="loading-icon"></div>
+</body>
+</html>
